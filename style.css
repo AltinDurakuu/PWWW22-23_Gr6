@@ -1,0 +1,23 @@
+/*
+some general css to code easier
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+svg,img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.full-block{
+    float: left;
+    width: 100%;
+}
