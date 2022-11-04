@@ -21,3 +21,48 @@ svg,img{
     float: left;
     width: 100%;
 }
+
+.about-us{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-us .about-msg .larger-about-p{
+    font-size: larger;
+}
+.about-us .about-msg p{
+    font-size: smaller;
+}
+.about-msg{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.read-more-btn{
+    text-decoration: none;
+    color: #FF983D;
+    border: 2px solid #FF983D;
+    padding: 7px 12px 7px 12px;
+    font-size: 10px;
+    float: left;
+    max-width: fit-content;
+}
+
+.welcome-message{
+    margin: 25px;
+    width: auto;
+}
+
+.welcome-message p .wlc{
+    font-size: 27px;
+}
+
+.welcome-message p .plaintiff{
+    color: #FF983D;
+    font-size: 40px;
+}
+
+.welcome-message p .personal-il{
+    color: #FF983D;
+    font-size: 20px;
+}
