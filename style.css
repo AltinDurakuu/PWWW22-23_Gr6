@@ -121,6 +121,11 @@ svg,img{
     display: flex;
     flex-direction: column;
 }
+
+.about-msg p{
+    margin-top: 20px;
+}
+
 .read-more-btn{
     text-decoration: none;
     color: #FF983D;
@@ -129,6 +134,7 @@ svg,img{
     font-size: 10px;
     float: left;
     max-width: fit-content;
+    margin-top: 20px;
 }
 
 .welcome-message{
