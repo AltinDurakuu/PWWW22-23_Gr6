@@ -245,10 +245,10 @@ svg,img{
 .consultation-name-tel-email{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .consultation-name-tel-email input{
-    margin: 10px;
     max-width: 200px;
 }
 
