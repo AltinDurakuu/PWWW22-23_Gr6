@@ -104,6 +104,44 @@ svg,img{
 .web-header-top-contact-us button img{
     margin-right: 11px;
 }
+/*navigation section*/
+.navigation{
+    border-top: 1px solid #e7e7e7;
+}
+.navigation .container{
+    display: flex;
+    line-height: 57px;
+}
+.navigation nav{
+    width: 76%;
+    margin-right: 32px;
+}
+.navigation nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation nav ul li {
+    position: relative;
+}
+.navigation nav ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 13px;
+    color: #000000;
+}
+.navigation nav ul li:hover::before{
+    content: "";
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #FF7800;
+    position: absolute;
+}
+/*Hero banner section*/
+.hero-banner{
+    background-image: url("assets/images/banner-image.png");
+}
 /*About us section*/
 .about-us{
     display: flex;
