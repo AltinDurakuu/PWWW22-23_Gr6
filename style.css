@@ -285,14 +285,19 @@ svg,img{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    background-image: url("assets/images/consultationphoto.png");
 }
 
 .consultation-container{
     max-width: 900px;
+    color: white;
+    padding-top: 90px;
+    padding-bottom: 50px;
 }
 
 .consultation-title{
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .consultation-text{
@@ -309,10 +314,16 @@ svg,img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 10px;
 }
 
 .consultation-name-tel-email input{
     max-width: 200px;
+    padding: 10px;
+}
+
+.consultation-case textarea{
+    resize: none;
 }
 
 .consultation-required-areas{
@@ -321,6 +332,7 @@ svg,img{
 }
 
 .consultation-btn{
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -330,9 +342,12 @@ svg,img{
     align-self: flex-start;
     float: left;
     font-size: 10px;
+    padding-top: 15px;
 }
 
 .consultation-btn-submit{
     float: right;
     background-color: #FF7800;
+    color: white;
+    padding: 10px;
 }
