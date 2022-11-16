@@ -256,6 +256,31 @@ svg,img{
     fill: #FF983D;
 }
 
+/*Awards And Achievements section*/
+
+.aaa{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.aaa_upper{
+    padding-right: 500px;
+    font-size: 15px;
+}
+
+.aaa_title{
+    font-size: 32px;
+}
+
+.aaa_logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
 .consultation{
     margin-top: 20px;
     display: flex;
