@@ -194,6 +194,18 @@ svg,img{
     font-size: 20px;
 }
 
+/*Practice section*/
+.practice{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+    background-image: url(assets/images/practice-background.png);
+}
+
+.practice-icons{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 
 /*Testemonials section*/
 .testimonials{
