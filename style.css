@@ -270,14 +270,14 @@ svg,img{
 
 /*Awards And Achievements section*/
 
-.aaa{
+.aaa_desc{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
 }
 
 .aaa_upper{
-    padding-right: 500px;
+    width: 55%;
     font-size: 15px;
 }
 
@@ -290,6 +290,12 @@ svg,img{
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
+}
+
+.aaa{
+    width: 100%;
+    background-color: #161616;
+    color: #ffffff;
 }
 
 
