@@ -298,6 +298,70 @@ svg,img{
     color: #ffffff;
 }
 
+.aaa_stats{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    font-size: 16px;
+
+}
+
+.a_s_left{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    padding: 8%;
+}
+
+.a_s_left p{
+    width: 110%;
+    height: 75%;
+    padding-right: 40%;
+    text-align: right;    
+}
+
+.a_s_ll{
+    border-right: #2c2c2c2c;
+    border-style: solid;
+    border-radius: 1px;
+}
+
+.a_s_left span{
+    font-size: 48px;
+    color: #FF7800;
+}
+
+.a_s_right{
+    padding: 8% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.a_s_right progress{
+    width:250%;
+    height: 36px;
+}
+
+
+#prog1{
+    accent-color: #A5CD50;
+}
+
+#prog2{
+    accent-color: #FF7800;
+}
+
+#prog3{
+    accent-color: #00B3EE;
+}
+
+#prog4{
+    accent-color: #7C8492;
+}
+
+
 
 .consultation{
     margin-top: 20px;
