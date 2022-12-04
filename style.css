@@ -67,6 +67,28 @@ svg,img{
     font-size: 15px;
     line-height: 1.33em;
 }
+.web-header-very-top_flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.web-header-very-top .web-header-very-top_social-media ul{
+    display: flex;
+}
+.web-header-very-top .web-header-very-top_social-media ul li{
+    text-align: center;
+    line-height: 32px;
+    border-left: 1px solid #707070;
+    width: 36px;
+}
+.web-header-very-top .web-header-very-top_social-media ul li:last-child{
+    border-right: 1px solid #707070;
+}
+.web-header-very-top .web-header-very-top_social-media ul li a{
+    padding: 0 6px;
+    color: #BFBFBF;
+}
+
 /*web header top*/
 .web-header-top-flex-container{
     display: flex;
@@ -129,6 +151,23 @@ svg,img{
     font-size: 13px;
     color: #000000;
 }
+.navigation-search input{
+    outline: none;
+    line-height: 24px;
+    padding: 0 8px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    display: none;
+}
+.navigation-search #show-search-btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.navigation-search #show-search-btn i{
+    width: 50px;
+    height: 50px;
+}
 .navigation nav ul li:hover::before{
     content: "";
     width: 100%;
@@ -141,6 +180,92 @@ svg,img{
 /*Hero banner section*/
 .hero-banner{
     background-image: url("assets/images/banner-image.png");
+    background-position: 0% 5%;
+    padding: 58px 0 100px 0;
+}
+.hero-banner .hero-banner-slider{
+    color: #fff;
+   
+}
+.hero-banner .hero-banner-slider h1{
+    font-size: 40px;
+    line-height: 1.25em;
+    font-weight: 600;
+}
+.hero-banner .hero-banner-slider p{
+    font-size: 15px;
+    line-height: 1.86em;
+}
+.hero-banner .hero-banner-slider a{
+    display: inline-block;
+    float: left;
+    text-transform: uppercase;
+    background-color: #FF7800;
+    padding: 0 30px;
+    text-decoration: none;
+    margin-top: 42px;
+    margin-bottom: 70px;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 3.62em;
+}
+.hero-banner .hero-banner-slider a i{
+    background-color: #fff;
+    width: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 14px;
+    color: #FF7800;
+}
+.hero-banner .hero-slider-dots{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+.hero-banner .hero-slider-dots div{
+    width: 9px;
+    height: 9px;
+    margin-right: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #707070;
+}
+.hero-banner .hero-slider-dots div.hero-slider-dots__active{
+    background-color: #FF7800;
+}
+.hero-banner .hero-banner-articles{
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-banner .hero-banner-articles article{
+    width: calc(25% - 3px);
+    background-color: #ffffff;
+    padding: 32px 58px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero-banner .hero-banner-articles article img{
+    margin-bottom: 24px;
+}
+.hero-banner .hero-banner-articles article h2{
+    font-size: 18px;
+    line-height: 1.39em;
+    margin-bottom: 11px;
+}
+.hero-banner .hero-banner-articles article p{
+    font-size: 15px;
+    line-height: 1.46em;
+    margin-bottom: 35px;
+}
+.hero-banner .hero-banner-articles article a{
+    color: #FF7800;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.38em;
 }
 /*About us section*/
 .about-us{
