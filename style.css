@@ -332,6 +332,126 @@ svg,img{
     grid-template-columns: 50% 50%;
 }
 
+.practice a{
+    text-decoration: none;
+    color: #FF983D;
+}
+
+.practice-title{
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 9px;
+}
+
+.practice-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.practice-button p{
+    width: 60%;    
+}
+
+.practice-button a{
+    border: 2px solid #FF983D;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.practice-birth-injury{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.practice-birth-injury img{
+    padding-right: 40px;
+    border-right: 1px solid gray;
+}
+
+.practice-business-litigation{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.practice-business-litigation img{
+    padding-right: 40px;
+    border-right: 1px solid gray;
+}
+
+.practice-catastrophic-injuries{
+    display: flex;
+    flex-direction: row;
+}
+
+.practice-catastrophic-injuries img{
+    padding-right: 40px;
+    border-right: 1px solid gray;
+}
+
+.practice-medical-malpractice{
+    display: flex;
+    flex-direction: row;
+}
+
+.practice-medical-malpractice img{
+    padding-right: 40px;
+    border-right: 1px solid gray;
+}
+
+.birth-injury-title{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.birth-injury-content{
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.business-litigation-title{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.business-litigation-content{
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.catastrophic-injuries-title{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.catastrophic-injuries-content{
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.medical-malpractice-title{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.medical-malpractice-content{
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
 /*Testemonials section*/
 .testimonials{
     display: flex;
