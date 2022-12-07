@@ -298,6 +298,7 @@ svg,img{
     float: left;
     max-width: fit-content;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .welcome-message{
@@ -366,6 +367,7 @@ svg,img{
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
+    align-items: flex-start;
 }
 
 .practice-birth-injury img{
@@ -377,6 +379,7 @@ svg,img{
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
+    align-items: flex-start;
 }
 
 .practice-business-litigation img{
@@ -387,6 +390,7 @@ svg,img{
 .practice-catastrophic-injuries{
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
 }
 
 .practice-catastrophic-injuries img{
@@ -397,6 +401,7 @@ svg,img{
 .practice-medical-malpractice{
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
 }
 
 .practice-medical-malpractice img{
@@ -450,6 +455,26 @@ svg,img{
     line-height: 25px;
     margin-top: 15px;
     margin-bottom: 20px;
+}
+
+.practice-sub-container{
+    max-width: 70%;
+    float: right;
+}
+.birth-injury-text{
+    padding-left: 40px;
+}
+
+.business-litigation-text{
+    padding-left: 40px;
+}
+
+.catastrophic-injuries-text{
+    padding-left: 40px;
+}
+
+.medical-malpractice-text{
+    padding-left: 40px;
 }
 
 /*Testemonials section*/
