@@ -592,9 +592,9 @@ svg,img{
 }
 .our-attorneys .our-attorneys-images{
     width: 50%;
+    display: flex;
 }
 .our-attorneys-container{
-    max-width: 590px;
 }
 /*Awards And Achievements section*/
 
