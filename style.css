@@ -653,6 +653,7 @@ svg,img{
     width: 100%;
     background-color: #161616;
     color: #ffffff;
+    margin-bottom: 70px;
 }
 
 .awards-stats{
@@ -660,7 +661,6 @@ svg,img{
     flex-direction: row;
     justify-content:left;
     font-size: 16px;
-
 }
 
 .a-s-left{
@@ -717,7 +717,80 @@ svg,img{
     accent-color: #7C8492;
 }
 
+/* Latest Blog section*/
+.move-right{ 
+    padding-left:3%;
+}
 
+.blog-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.bt-left{
+    width: 80%;
+}
+
+.bt-left p{
+    color: #404040;
+    font-size: 16px;
+}
+
+.bt-left h2{
+    font-size: 32px;
+}
+
+.bt-view-all-btn{
+    text-decoration: none;
+    color: #E63100;
+    border: 2px solid #FF983D;
+    padding: 7px 12px 7px 12px;
+    font-size: 14px;
+    max-width: fit-content;
+}
+
+.blog-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.blog-main div{
+    width: 23%;
+}
+
+.bm-date{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.bm-date span{
+    font-size: 22px;
+    color: #FFFFFF;
+    background-color: #FF7800;
+    padding: 10px 12px;
+}
+
+.bm-big{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.bm-small{
+    font-size: 15px;
+    color: #404040;
+    margin-bottom: 20px;
+}
+
+.bm-learn-more{
+    text-decoration: none;
+    color: #FF983D;
+    font-size: 14px;
+}
 
 .consultation{
     margin-top: 20px;
