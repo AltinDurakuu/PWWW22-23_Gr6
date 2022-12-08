@@ -541,6 +541,8 @@ svg,img{
 .our-attorneys{
     width: 100%;
     display: flex;
+    margin-top: 80px;
+    margin-bottom: 69px;
 }
 .our-attorneys .our-attorneys-text{
     width: 50%;
@@ -590,11 +592,37 @@ svg,img{
     line-height: 34px;
     padding: 5px 8px;
 }
-.our-attorneys .our-attorneys-images{
+.our-attorneys .our-attorneys-images-section{
     width: 50%;
     display: flex;
+    position: relative;
 }
-.our-attorneys-container{
+
+.our-attorneys-imgs-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 99px;
+}
+.our-attorneys-imgs-container .our-attorneys__img{
+    margin-bottom: 3px;
+    position: relative;
+}
+.our-attorneys-imgs-container .our-attorneys__img--active::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: calc(50% - 5px);
+    left: -11px;
+    border: 5px solid transparent;
+    border-left: 0;
+    border-right: 11px solid #FF7800;
+}
+
+.our-attorneys-imgs-container .our-attorneys__img:last-child{
+    margin-bottom: 0;
 }
 /*Awards And Achievements section*/
 
