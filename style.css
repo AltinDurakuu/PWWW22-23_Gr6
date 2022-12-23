@@ -899,6 +899,7 @@ svg,img{
     background-color: #FF7800;
     color: white;
     padding: 10px;
+    border: none;
 }
 
 /*footer styles*/
