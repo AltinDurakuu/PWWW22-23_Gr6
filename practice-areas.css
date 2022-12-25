@@ -1,0 +1,64 @@
+.second-birth-injury, .second-catastrophic-injuries{
+    background-color: #f1bf94;
+    border-radius: 50px;
+}
+.second-birth-injury-title{
+    padding-top: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.second-birth-injury-content, .second-business-litigation-content, .second-catastrophic-injuries-content, .second-medical-malpractice-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.second-birth-injury-content img, .second-catastrophic-injuries-content img{
+    padding-right: 40px;
+    border-right: 1px solid #FF983D;
+    padding-left: 15px;
+}
+
+.second-birth-injury-text, .second-catastrophic-injuries-text{
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.second-business-litigation, .second-medical-malpractice{
+    background-color: #8a5b33;
+    color: white;
+    border-radius: 50px;
+}
+
+.second-business-litigation-title, .second-medical-malpractice-title{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.second-business-litigation-img, .second-medical-malpractice-img{
+    float: right;
+    padding-left: 40px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    border-left: 1px solid #FF983D;
+}
+
+.second-business-litigation-text, .second-medical-malpractice-text{
+    margin-bottom: 20px;
+}
+
+.second-business-litigation-text:not(img), .second-medical-malpractice-text:not(img){
+    padding-left: 40px;
+}
+
+.second-catastrophic-injuries-title{
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
