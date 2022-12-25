@@ -62,3 +62,81 @@
     margin-bottom: 20px;
 }
 
+.prevent-birth-injury h2{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.prevent-birth-injury-list{
+    padding: 1.5rem 1.5rem 1.5rem 4em;
+    border: 0.3rem solid #FF983D;
+	columns: 15rem;
+	column-gap: 7rem;
+	column-rule: 4px dotted #FF983D;
+	border-radius: 0.5rem;
+}
+
+.prevent-birth-injury-list > * + *{
+    margin-top: 1rem;
+}
+
+.prevent-birth-injury-list ::marker{
+    content: counters(list-item, '') ': ';
+	font-weight: 700;
+	font-size: 1.5em;
+	color: #FF983D;
+}
+
+.personal-injury-law-process {
+    margin: 0 auto;
+    border: 0.3rem solid #FF983D;
+    padding: clamp(1rem, 2vw, 3rem);
+	border-radius: 0.5rem;
+}
+
+.personal-injury-law-process h2, dl{
+    margin: 0;
+}
+
+.personal-injury-law-process-title {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.personal-injury-law-process > * + * {
+    margin-top: 1rem;
+}
+
+dl{
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+	gap: 1rem;
+}
+
+dl > div{
+    background: #ffab62;
+	padding: 1rem;
+}
+
+dl > div:nth-child(4n - 2) {
+	background: #ffab62;
+}
+
+dl > div:nth-child(4n - 1) {
+	background: #ffab62;
+}
+
+dl > div:nth-child(4n) {
+	background: #ffab62;
+}
+
+dt {
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+dd {
+	margin: 0;
+}
