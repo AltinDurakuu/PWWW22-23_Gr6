@@ -1,0 +1,43 @@
+.our-philosophy h2{
+    font-size: 36px;
+    margin: 25px 0;
+}
+.our-philosophy-articles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.our-philosophy-articles article{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 35px;
+    padding-right: 40px;
+}
+.our-philosophy-articles article i{
+    margin: 25px;
+    font-size: 36px;
+}
+.our-philosophy-articles article h3{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.our-philosophy-articles article p{
+    line-height: 1.1em;
+    color: rgba(0, 0, 0, 0.8);
+}
+.our-philosophy-articles-text{
+    width: 50%;
+    
+}
+.our-philosophy-articles-img{
+    width: 50%;
+}
+.our-philosophy-articles-img figure img{
+    border-radius: 3px;
+}
