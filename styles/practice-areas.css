@@ -140,3 +140,21 @@ dt {
 dd {
 	margin: 0;
 }
+
+.theCanvas, .theCanvas2{
+    max-width: 250px;
+    margin: 20px auto;
+}
+
+#myCanvas, #myCanvas2{
+    border: 0.3rem solid #FF983D;
+}
+
+.canvas-paragraph{
+    text-align: center;
+    font-size: 25px;
+}
+
+.canvas-paragraph mark{
+    background-color: #FF983D;
+}
