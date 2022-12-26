@@ -1,0 +1,59 @@
+.top{
+    text-align: center;
+}
+
+.top h1{
+    color: #FF7800;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.testimonilas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+
+.record{
+    width: 31%;
+    text-align: center;
+    background-color: #eee;
+    padding:50px 10px 10px 10px;
+    position: relative;
+    margin: 30px 0;
+    box-shadow: 10px 5px 5px #aaa;
+    transition: 0.2s;
+}
+
+.record:hover{
+    transform: scale(1.1);
+    background-color: #f8f8ff;
+}
+
+.r-photo{
+    display: flex;
+    justify-content: center;
+}
+
+.r-photo img{
+    position:absolute;
+    top: -45px;   
+}
+
+.r-main-txt{
+    padding:0 10px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.r-name, .r-description{
+    font-size: 28px;
+    font-weight:600;
+    color: #222;
+}
+
+.r-description{
+    padding-bottom: 10px;
+}
