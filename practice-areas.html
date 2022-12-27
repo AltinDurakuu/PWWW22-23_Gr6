@@ -227,7 +227,7 @@
         <section>
             <div class="container">
                 <div class="theCanvas">
-                    <canvas id="myCanvas" width="250" height="150"></canvas>
+                    <canvas id="myCanvas" width="285" height="150"></canvas>
                 </div>
                 <p class="canvas-paragraph"><mark>by</mark></p>
                 <div class="theCanvas2">
@@ -245,6 +245,7 @@
             ctx.stroke();
             ctx.font = "25px Arial";
             ctx.fillText("Star awarded to us", 10, 110);
+            ctx.fillText("\u00C7far\u00EB Na \u00CBsht\u00EB Dhuruar:", 10, 135);
 
             function drawStar(cx, cy, spikes, outerRadius, innerRadius) {
                 var rot = Math.PI / 2 * 3;
