@@ -144,9 +144,24 @@ dd {
 	margin: 0;
 }
 
+.canvas-container{
+    background-image: linear-gradient(to left, #FF983D, white);
+    transform: scale(0.8, 0.8);
+}
 .theCanvas, .theCanvas2{
     max-width: 250px;
     margin: 20px auto;
+    transform: translate(10px, 10px);
+}
+
+.theCanvas{
+    transform: rotate(4deg);
+    transform: skew(5deg, 10deg);
+}
+
+.theCanvas2{
+    transform: rotate(-4deg);
+    transform: skew(10deg, 5deg);
 }
 
 #myCanvas, #myCanvas2{
