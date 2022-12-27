@@ -168,7 +168,7 @@ svg,img{
     width: 50px;
     height: 50px;
 }
-.navigation nav ul li:hover::before{
+.navigation nav ul li:hover::before, .navigation nav ul li.active--page::before{
     content: "";
     width: 100%;
     top: 0;
