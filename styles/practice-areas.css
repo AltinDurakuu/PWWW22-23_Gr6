@@ -1,6 +1,8 @@
 .second-birth-injury, .second-catastrophic-injuries{
-    background-color: #f1bf94;
+    background-color: aliceblue;
     border-radius: 50px;
+    border: 3px solid #FF983D;
+    margin-bottom: 20px;
 }
 .second-birth-injury-title{
     padding-top: 20px;
@@ -26,9 +28,10 @@
 }
 
 .second-business-litigation, .second-medical-malpractice{
-    background-color: #8a5b33;
+    background-color: #404040;
     color: white;
     border-radius: 50px;
+    margin-bottom: 20px;
 }
 
 .second-business-litigation-title, .second-medical-malpractice-title{
@@ -157,4 +160,30 @@ dd {
 
 .canvas-paragraph mark{
     background-color: #FF983D;
+}
+
+.practice-nested-list-title{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.practice-nested-list li{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #FF983D;
+    padding: 10px;
+}
+
+.practice-nested-list li ul {
+    margin-left: 20px;
+}
+
+.practice-nested-list li ul li{
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
 }
