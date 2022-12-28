@@ -33,17 +33,17 @@
     </style>
     
     <script>
-        function allowDrop(ev) {
+        function allowDrop(ev){
             ev.preventDefault();
         }
 
-        function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
+        function drag(ev){
+            ev.dataTransfer.setData("Text", ev.target.id);
         }
 
-        function drop(ev) {
+        function drop(ev){
             ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
+            var data = event.dataTransfer.getData("Text");
             ev.target.appendChild(document.getElementById(data));
         }
     </script>
@@ -343,7 +343,8 @@
                 <h3 class="DnD-title">Working with us is as easy as putting this logo in the box</h3>
                 <div id="DnD" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                 <br>
-                <img id="dragimg" src="./assets/images/logo.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                <img id="drag1" src="./assets/images/logo.png" alt="foto" draggable="true" ondragstart="drag(event)" >
+                <div id="DnD" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
         </section>
     </main>
