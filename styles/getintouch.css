@@ -14,7 +14,7 @@
 .getintouch .getintouch_content h2{
     font-size: 72px;
     text-align: center;
-    color: #f1c50e;
+    color: #FF7800;
     font-weight: 700;
     position: relative;
     margin-top: 70px;
@@ -58,7 +58,41 @@
     position: relative;
     left: -40px;
     top: -5px;
+    color: #FF7800;
 }
 .getintouch_content_register{
     width: 70%;
+}
+.getintouch_content_register table tr td input{
+    float: right;
+    margin-left: 15px;
+    border: none;
+    height: 24px;
+    padding-left: 7px;
+}
+.getintouch_content_register table tr td input:hover{
+    scale: 1.05;
+}
+.getintouch_content_register table tr td input:focus{
+    outline-style:outset;
+    outline-color: #FF7800;
+    outline-width: 2px;
+    scale: 1.06;
+}
+.getintouch_content_register table tfoot tr td input{
+    float: none;
+}
+.getintouch_content_register table tfoot tr{
+    text-align: center;
+}
+.getintouch_content_register table tr td.table-cell-checkbox input{
+    outline: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -10px;
+    color: #000000;
+}
+.getintouch_content_register th{
+    padding-bottom: 15px;
 }
