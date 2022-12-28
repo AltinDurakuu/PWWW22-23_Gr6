@@ -5,11 +5,13 @@
 .getintouch h3, .getintouch table th{
     font-family: RobotoFont;
     font-weight: bold;
-}.getintouch{
+}
+.getintouch{
     background-color: #000000;
     color: #ffffff;
     position: relative;
     z-index: 0;
+    padding-bottom: 10px;
 }
 .getintouch .getintouch_content h2{
     font-size: 72px;
@@ -20,7 +22,6 @@
     margin-top: 70px;
     margin-bottom: 120px;
 }
-
 .getintouch h2::before{
     content: 'Contact';
     opacity: 1;
@@ -69,6 +70,8 @@
     border: none;
     height: 24px;
     padding-left: 7px;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
 }
 .getintouch_content_register table tr td input:hover{
     scale: 1.05;
@@ -92,7 +95,34 @@
     position: relative;
     top: -10px;
     color: #000000;
+    border-radius: 3px;
 }
 .getintouch_content_register th{
     padding-bottom: 15px;
+    font-size: 24px;
+}
+.getintouch_content_register table textarea{
+    margin-top: 10px;
+    outline: none;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 2px;
+}
+.getintouch_content_register table textarea:hover{
+    border: 2px solid #ff7700c7;
+}
+.getintouch_content_register table textarea:focus{
+    border: 2px solid #FF7800;
+}
+.getintouch_content_register table input[type="submit"]{
+   outline: none;
+   background-color: #FF7800;
+   padding: 0 20px;
+   color: #ffffff;
+   font-size: 20px;
+   height: 40px;
+   cursor: pointer;
+}
+.getintouch_content_register table{
+    border-color: #FF7800;
 }
