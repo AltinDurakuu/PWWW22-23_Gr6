@@ -34,3 +34,36 @@ const interval = setInterval(() => {
   slides[currentSlideIndex].classList.add('hero-banner-slider--active');
   dots[currentSlideIndex].classList.add('hero-slider-dots__active');
 }, 3000);
+
+
+// Testimonials slider
+
+const tSliderContainer = document.querySelector('.tst-main-container');
+const tSlides = Array.from(tSliderContainer.querySelectorAll('.tst-main'));
+
+let tCurrentSlideIndex = 0;
+
+tSlides[tCurrentSlideIndex].classList.add('tst-main--active');
+
+const tInterval = setInterval(() => {
+  tSlides[tCurrentSlideIndex].classList.remove('tst-main--active');
+  
+  tCurrentSlideIndex = (tCurrentSlideIndex + 1) % tSlides.length;
+
+  tSlides[tCurrentSlideIndex].classList.add('tst-main--active');
+
+},1000)
+
+
+document.getElementById("tst-move-forward").addEventListener("click",tMoveForward);
+document.getElementById("tst-move-backwards").addEventListener("click",tMoveBackwards);
+
+function tMoveForward(){
+  tCurrentSlideIndex = tCurrentSlideIndex + 1;
+}
+
+function tMoveBackwards(){
+  tCurrentSlideIndex = tCurrentSlideIndex - 1;
+}
+
+

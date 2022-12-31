@@ -572,16 +572,19 @@ svg,img{
 .testimonials{
     display: flex;
     flex-direction: row;
+    margin-top: 80px;
 }
 
 .tst-main{
+    display: none;
+}
+
+.tst-main--active{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
-
 
 .tst-m-txt{
     text-align: center;
@@ -604,12 +607,13 @@ svg,img{
 
 
 .tst-p-dscr{
+    margin-top: 20px;
     color: #404040;
     font-size: 15px;
 }
 
 .tst-p-name{
-    color: #FF983D;
+    color: #FF7800;
     font-size: 18px;
 }
 
@@ -626,7 +630,8 @@ svg,img{
 
 .tst-move{
     margin-top: 100px;
-    fill: #FF983D;
+    width: 100px;
+    height: 100px;
 }
 /*our attorneys section*/
 .our-attorneys{
