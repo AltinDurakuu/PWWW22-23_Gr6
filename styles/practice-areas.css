@@ -202,3 +202,15 @@ dd {
     font-weight: normal;
     color: #666;
 }
+
+.video-sub-container{
+    margin: auto;
+    max-width: fit-content;
+    text-align: center;
+}
+
+.video-sub-container p{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}

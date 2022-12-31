@@ -138,22 +138,52 @@
                         <span class="personal-il">PERSONAL INJURY LAW</span></p>
                     </div>
                     <div class="about-msg">
-                        <p class="larger-about-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis numquam, 
-                            reprehenderit nam quasi fugiat consectetur quas incidunt quaerat accusantium ad ullam eum eius.
-                        </p>
-                        <p>Lorem ipsum wdolor sit amet consectetur adipisicing elit. A similique quidem inventore tenetur mollitia quae ab. Reiciendis, 
-                            architecto blanditiis autem ullam molestias accusantium nihil voluptas magni ipsum fuga labore, dolore quod. Aut quisquam
-                             cumque quo? Recusandae, amet culpa. Ut sed commodi minima alias temporibus voluptates itaque beatae iste eos rem, id ratione quos 
-                            harum ab reprehenderit exercitationem voluptate odit animi saepe nihil. Fugit architecto quod pariatur natus ipsa!
-                        </p>
+                            <p class="larger-about-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis numquam, 
+                                reprehenderit nam quasi fugiat consectetur quas incidunt quaerat accusantium ad ullam eum eius.
+                            </p>
+                            <div class="about-txt">
+                                <p class="seen-content">Lorem ipsum wdolor sit amet consectetur adipisicing elit. A similique quidem inventore tenetur mollitia quae ab. Reiciendis, 
+                                    architecto blanditiis autem ullam molestias accusantium nihil voluptas magni ipsum fuga labore, dolore quod. Aut quisquam
+                                    cumque quo? Recusandae, amet culpa. Ut sed commodi minima alias temporibus voluptates itaque beatae iste eos rem, id ratione quos 
+                                    harum ab reprehenderit exercitationem voluptate odit animi saepe nihil. Fugit architecto quod pariatur natus ipsa!
+                                </p>
         
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat velit a non, dolor temporibus voluptatem deserunt quasi ipsa rerum.
-                             Ab necessitatibus adipisci repellendus enim. Iusto eligendi, deleniti et est nostrum sequi explicabo exercitationem.
-                        </p>
-                        <a href="#" class="read-more-btn">READ MORE ></a>
+                                <p class="seen-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat velit a non, dolor temporibus voluptatem deserunt quasi ipsa rerum.
+                                    Ab necessitatibus adipisci repellendus enim. Iusto eligendi, deleniti et est nostrum sequi explicabo exercitationem.
+                                </p>
+
+                                <p class="unseen-content">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum deserunt similique possimus minus quisquam, vero maiores labore iusto dolorem quam.
+                                </p>
+                                <p class="unseen-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nihil nobis eum necessitatibus. Nulla maiores nihil totam blanditiis ullam praesentium.
+                                </p>
+                            </div>
+                            <a class="read-more-btn" onclick="change()">READ MORE ></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <script>
+                    document.querySelectorAll(".about-txt").forEach(function(current) {
+
+                        var toggler = document.querySelector(".read-more-btn");
+        
+                        toggler.addEventListener("click", function(e) {
+                            current.classList.toggle("open");
+                        }, false);
+                    });
+
+                    function change() {
+                        var str1 = document.querySelector(".read-more-btn");
+
+                        if(str1.innerText == "READ MORE >"){
+                            str1.innerHTML = "READ LESS >";
+                        }
+                        else if (str1.innerText == "READ LESS >"){
+                            str1.innerHTML = "READ MORE >";
+                        }
+                    }
+            </script>
         </section>
 
         <section class="full-block practice">

@@ -346,6 +346,25 @@ svg,img{
     font-size: 20px;
 }
 
+.about-txt {
+    position: relative;
+    padding-bottom: 0.5em; 
+}
+
+.about-txt:not(.open) > * {
+    display: none;
+}
+
+.about-txt:not(.open) > .seen-content {
+    display: block;
+}
+
+.read-more-btn:hover{
+    cursor: pointer;
+    background: aliceblue;
+    transition: background 0.9s;
+}
+
 /*Practice section*/
 .practice{
     padding-top: 60px;
