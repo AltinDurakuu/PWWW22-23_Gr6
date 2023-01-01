@@ -11,8 +11,20 @@ let currentSlideIndex = 0;
 slides[currentSlideIndex].classList.add('hero-banner-slider--active');
 dots[currentSlideIndex].classList.add('hero-slider-dots__active');
 
+function showSlide(n) {
+  // Remove the active class from all slides and dots
+  slides.forEach(slide => slide.classList.remove('hero-banner-slider--active'));
+  dots.forEach(dot => dot.classList.remove('hero-slider-dots__active'));
+  currentSlideIndex = n;
+  // Add the active class to the specified slide and dot
+  slides[n].classList.add('hero-banner-slider--active');
+  dots[n].classList.add('hero-slider-dots__active');
+  clearInterval(interval);
+  interval = setInterval(changeSlide, 3000);
+}
 // Set the interval for the automatic slideshow/dots
-const interval = setInterval(() => {
+let interval = setInterval(changeSlide, 3000);
+function changeSlide(){
   // Remove the "active" class from the current slide/dot
   slides[currentSlideIndex].classList.remove('hero-banner-slider--active');
   dots[currentSlideIndex].classList.remove('hero-slider-dots__active');
@@ -23,4 +35,4 @@ const interval = setInterval(() => {
   // Add the "active" class to the next slide
   slides[currentSlideIndex].classList.add('hero-banner-slider--active');
   dots[currentSlideIndex].classList.add('hero-slider-dots__active');
-}, 3000);
+}

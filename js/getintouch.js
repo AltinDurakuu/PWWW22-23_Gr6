@@ -13,23 +13,36 @@ function validateForm(e) {
     let email2 = document.getElementById("getintouch_email2");
     var p = document.getElementById('getintouch_password1').value;
     var p2 = document.getElementById('getintouch_password2').value;
+    let validation = true;
     if(email1.value !== email2.value){
-        addParagraph("Your emails do not match")
+        addParagraph("Your emails do not match");
+        validation = false;
     }
     if(p !== p2){
         addParagraph("Your passwords do not match");
+        validation = false;
     }
     if (p.length < 8) {
         addParagraph("Your password must be at least 8 characters"); 
+        validation = false;
     }
     if (p.search(/[a-z]/i) < 0) {
         addParagraph("Your password must contain at least one letter.");
+        validation = false;
     }
     if (p.search(/[0-9]/) < 0) {
         addParagraph("Your password must contain at least one digit."); 
+        validation = false;
     }
-    if(modalForm.hasChildNodes()){
+    if (!(/[^a-zA-Z0-9]/.test(p))) {
+        addParagraph("Your password must contain at least one special character.");
+        validation = false;
+      }
+      
+    if(!validation){
         modalForm.classList.remove("remove-modal");
+    }else{
+        form.reset();
     }
 }
 function removeModalForm(){
