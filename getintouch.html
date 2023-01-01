@@ -38,7 +38,7 @@
                             <p>Phones answered 24/7</p>
                             <p class="web-header-top-contact-us_phone-number">(000) 000-0000</p>
                         </div>
-                        <button><img src="assets/images/chat-now.svg" alt="">Chat Live Now!</button>
+                        <button id="chatnow"><span><img src="assets/images/chat-now.svg" alt="">Chat Live Now!</span></button>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="getintouch_content_register">
                             <h3>Register to get discounts</h3>
-                            <form action="">
+                            <form action="" id="getintouch_form">
                                 <table cellspacing="30" border="1">
                                     <thead>
                                         <tr>
@@ -106,26 +106,26 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <label>Name:<input type="text" required></label>
+                                                <label>Name:<input type="text" required placeholder="Name"></label>
                                             </td>
                                             <td>
-                                                <label>Last name:<input type="text" required></label>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label>Email:<input type="email" required></label>
-                                            </td>
-                                            <td>
-                                                <label>Confirm email:<input type="email" required></label>
+                                                <label>Last name:<input type="text" required placeholder="Last name"></label>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label>Enter your city:<input type="text" list="cities"></label>
+                                                <label>Email:<input id="getintouch_email" type="email" required placeholder="Email"></label>
                                             </td>
                                             <td>
-                                                <label>Telephone:<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
+                                                <label>Confirm email:<input type="email" id="getintouch_email2" required placeholder="Connfirm email"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Enter your city:<input type="text" list="cities" placeholder="City"></label>
+                                            </td>
+                                            <td>
+                                                <label>Telephone:<input type="tel" placeholder="383 44 000 000" pattern="[0-9]{3} [0-9]{2} [0-9]{3} [0-9]{3}"></label>
                                             </td>
                                             <datalist id="cities">
                                                 <option value="Prishtine"></option>
@@ -136,10 +136,10 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label>Password:<input type="password" required></label>
+                                                <label>Password:<input id="getintouch_password1" type="password" required placeholder="Password"></label>
                                             </td>
                                             <td>
-                                                <label>Confirm password:<input type="password" required></label>
+                                                <label>Confirm password:<input id="getintouch_password2" type="password" required placeholder="Confirm Password"></label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -147,7 +147,7 @@
                                                 <label>Have u ever been<br>client of us?<input type="checkbox"></label><br>
                                             </td>
                                             <td rowspan="3">
-                                                <label>Any comments:<br><textarea name="" id="" style="width: 100%;" rows="10"></textarea></label>
+                                                <label>Any comments:<br><textarea name="" id="" style="width: 100%;" rows="10" placeholder="Add a comment"></textarea></label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -169,6 +169,9 @@
             </div>
         </section>
     </main>
+    <div class="errors remove-modal">
+        <div class="closeBtn" id="close"><i class="fa-solid fa-xmark"></i></div>
+    </div>
     <footer>
         <section class="full-block our-location">
             <div id="map">
@@ -201,7 +204,9 @@
             </div>
         </section>
     </footer>
-    <script src="main.js"></script>
+
+    <script src="js/getintouch.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs6kz4vjgFFQ9Wj84dcAiDBQXZmRynDFg&callback=initMap" type="text/javascript"></script>
   
 </body>

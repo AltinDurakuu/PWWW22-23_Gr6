@@ -126,3 +126,32 @@
 .getintouch_content_register table{
     border-color: #FF7800;
 }
+.errors{
+    position: fixed;
+    z-index: 100;
+    width: 70%;
+    height: 70%;
+    background-color: #FF7800;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    top: 15%;
+    left: 15%;
+}
+.errors #close{
+    float: right;
+    margin: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 7px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.errors.remove-modal{
+    display: none;
+}
+.errors p{
+    line-height: 1.2em;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 10px;
+}
