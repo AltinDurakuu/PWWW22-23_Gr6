@@ -113,7 +113,7 @@ svg,img{
     line-height: 1em;
     font-weight: 300;
 }
-.web-header-top-contact-us button{
+.web-header-top-contact-us #chatnow{
     background-color: #FF7800;
     border: 1px solid #FF7800;
     color: #ffffff;
@@ -123,23 +123,21 @@ svg,img{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.web-header-top-contact-us button span{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-.web-header-top-contact-us button img{
-    margin-right: 11px;
-}
-#chatnow {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
 }
-#chatnow span{
+.web-header-top-contact-us #chatnow span{
+    display: flex;
+    justify-content:center;
+    align-items: center;
     z-index: 4;
 }
+.web-header-top-contact-us #chatnow img{
+    margin-right: 11px;
+}
+
 #chatnow::before{
     width: 100%;
 	height: 100%;
