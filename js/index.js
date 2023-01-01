@@ -20,10 +20,10 @@ function showSlide(n) {
   slides[n].classList.add('hero-banner-slider--active');
   dots[n].classList.add('hero-slider-dots__active');
   clearInterval(interval);
-  interval = setInterval(changeSlide, 3000);
+  interval = setInterval(changeSlide, 5000);
 }
 // Set the interval for the automatic slideshow/dots
-let interval = setInterval(changeSlide, 3000);
+let interval = setInterval(changeSlide, 5000);
 function changeSlide(){
   // Remove the "active" class from the current slide/dot
   slides[currentSlideIndex].classList.remove('hero-banner-slider--active');

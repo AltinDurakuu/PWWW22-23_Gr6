@@ -165,6 +165,31 @@ svg,img{
 }
 .hero-banner-slider--active{
     display: block;
+    animation: sliderAnimation 1s 1;
+    animation-timing-function: linear;
+    position: relative;
+}
+@keyframes sliderAnimation{
+    0% {
+        left: -150px;
+        opacity: 0;
+    }
+    25% {
+        left: -110px;
+        opacity: 0.25;
+    }
+    50%{
+        left: -75px;
+        opacity: 0.5;
+    }
+    75%{
+        left: -33px;
+        opacity: 0.75;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
 }
 /*navigation section*/
 .navigation{
