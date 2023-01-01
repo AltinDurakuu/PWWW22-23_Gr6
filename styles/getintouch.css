@@ -155,3 +155,36 @@
     margin-top: 10px;
     margin-left: 10px;
 }
+
+#mapgeo{
+    width: 500px;
+    height: 500px;
+}
+
+.geoloc-sub-container{
+    max-width: 510px;
+    margin: auto;
+    text-align: center;
+}
+
+.geoloc-title{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.geoloc-btn{
+    max-width: fit-content;
+    border: none;
+    height: 40px;
+    background-color: #FF983D;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.geoloc-btn:hover{
+    box-shadow: 5px 5px 5px gray;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+}

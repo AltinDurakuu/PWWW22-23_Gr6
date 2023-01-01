@@ -168,6 +168,64 @@
                 </div>
             </div>
         </section>
+
+        <section class="full-block">
+            <div class="container">
+                <div class="geoloc-sub-container"> 
+                    <h2 class="geoloc-title">Here you can see your location</h2>
+                    <button class="geoloc-btn" onclick="getLocation()">Show my position</button>
+                    <div id="mapgeo">
+                    </div>
+                </div>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs6kz4vjgFFQ9Wj84dcAiDBQXZmRynDFg&callback=initMap">
+                </script>
+
+                <script type="text/javascript">
+                    function getLocation(){
+                        if (navigator.geolocation){
+                            navigator.geolocation.getCurrentPosition(showPos, showErr, {enableHighAccuracy:true, timeout: 5000, maximumAge: 0});
+                        }
+                        else{
+                            alert("Sorry! Your browser does not support Geolocation API");
+                        }
+                    }
+
+                    function showPos(position){
+                        latt = position.coords.latitude;
+                        long = position.coords.longitude;
+                        var lattlong = new google.maps.LatLng(latt, long);
+
+                        var myOptions = {
+                            center: lattlong,
+                            zoom: 15,
+                            mapTypeControl: true,
+                            navigationControlOptions: {
+                                style: google.maps.NavigationControlStyle.SMALL
+                            }
+                        }
+
+                        var maps = new google.maps.Map(document.getElementById("mapgeo"), myOptions);
+                        var markers = new google.maps.Marker({
+                            position: lattlong,
+                            map: maps,
+                            title: "Your position:"
+                        });
+                    }
+
+                    function showErr(error){
+                        switch(error.code){
+                            case error.PERMISSION_DENIED: alert("User or Device exact location information is currently unavailable.");
+                            break;
+                            case error.TIMEOUT: alert("Requested request is getting time out .");
+                            break;
+                            case error.UNKNOWN_ERROR: alert("Something unknown error is accrued.");
+                            break;
+                        }
+                    }
+                </script>
+            </div>
+        </section>
     </main>
     <div class="errors remove-modal">
         <div class="closeBtn" id="close"><i class="fa-solid fa-xmark"></i></div>
