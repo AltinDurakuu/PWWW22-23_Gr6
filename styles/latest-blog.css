@@ -1,0 +1,110 @@
+.main-blog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    background-color: #fafafa;
+}
+
+.mb-left{
+    width: 55%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mb-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom: solid 2px #aaa;
+}
+
+.mbd-date{
+    color: #666;
+    padding: 5px;
+}
+
+.mbd-extra{
+    padding: 5px;
+}
+
+.mb-tile{
+   font-size: 24px;
+   font-weight: 600;
+   padding-bottom: 15px;
+}
+
+.mb-author{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.mba-pic{
+    width: 30px;
+    height: 30px;
+}
+
+.mba-name{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+.mb-right{
+    width: 44%;
+    height: 600px;
+    background-image: url(../assets/images/our-attorneys1.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.blogs-contaioner{
+    margin-bottom: 100px;
+}
+
+.b-title{
+    display: flex;
+    justify-content: center;
+    color: #FF7800;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.small-blogs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: aliceblue;
+}
+
+.small-blog{
+    width: 30%;
+    height: 300px;
+    background-image: url(../assets/images/our-attorneys1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+
+.sb-date{
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.sb-title{
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 500;
+}
