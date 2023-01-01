@@ -52,18 +52,27 @@ const tInterval = setInterval(() => {
 
   tSlides[tCurrentSlideIndex].classList.add('tst-main--active');
 
-},1000)
+},20000)
 
 
 document.getElementById("tst-move-forward").addEventListener("click",tMoveForward);
 document.getElementById("tst-move-backwards").addEventListener("click",tMoveBackwards);
 
 function tMoveForward(){
-  tCurrentSlideIndex = tCurrentSlideIndex + 1;
+  tSlides[tCurrentSlideIndex].classList.remove('tst-main--active');
+  tCurrentSlideIndex = (tCurrentSlideIndex + 1) % tSlides.length; 
+  tSlides[tCurrentSlideIndex].classList.add('tst-main--active');
 }
 
 function tMoveBackwards(){
-  tCurrentSlideIndex = tCurrentSlideIndex - 1;
+  tSlides[tCurrentSlideIndex].classList.remove('tst-main--active');
+  if(tCurrentSlideIndex==0){
+    tCurrentSlideIndex=tSlides.length-1;
+  }
+  else{
+    tCurrentSlideIndex = (tCurrentSlideIndex - 1) % tSlides.length;
+  }
+  tSlides[tCurrentSlideIndex].classList.add('tst-main--active');
 }
 
 

@@ -594,7 +594,6 @@ svg,img{
 
 #tst-t-txt{
     font-size: 30px;
-    
 }
 
 .tst-person{
@@ -604,7 +603,6 @@ svg,img{
     justify-content: center;
     text-align: center;
 }
-
 
 .tst-p-dscr{
     margin-top: 20px;
@@ -629,9 +627,15 @@ svg,img{
 }
 
 .tst-move{
+    display: flex;
+    align-items: center;
     margin-top: 100px;
     width: 100px;
     height: 100px;
+}
+
+.tst-move-btn{
+    cursor: pointer;
 }
 /*our attorneys section*/
 .our-attorneys{
