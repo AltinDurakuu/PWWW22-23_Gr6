@@ -1,4 +1,8 @@
 .main-blog{
+    display: none;
+}
+
+.main-blog--active{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,13 +24,12 @@
     100%  {background-size: 90%;}
   }
 
-.main-blog:hover{
+.main-blog--active:hover{
     animation-name: bigbg;
     animation-duration: 10s;
     animation-iteration-count: 1;
     animation-direction:alternate;
     animation-timing-function: linear;
-    
 }
 
 .mb-left{
