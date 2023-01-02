@@ -1,0 +1,14 @@
+CACHE MANIFEST
+
+/style.css
+/js/index.js
+/assets/audios/*
+/assets/fonts/*
+/assets/images/*
+/assets/videos/*
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ /index.html  
