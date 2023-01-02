@@ -36,3 +36,39 @@ function changeSlide(){
   slides[currentSlideIndex].classList.add('hero-banner-slider--active');
   dots[currentSlideIndex].classList.add('hero-slider-dots__active');
 }
+
+const smallImgs = document.querySelectorAll('.our-attorneys__img');
+const fullSizeImg = document.getElementById('full-size-img');
+let currentSmallImg = 0;
+
+
+smallImgs.forEach(img => {
+img.addEventListener('click', event => {
+// change the src of the full-size img to the src of the clicked small img
+imageStr = event.target.src;
+for(let i = 0; i < 4; i++){
+  smallImgs[i].classList.remove("our-attorneys__img--active");
+  if(event.target.parentElement == smallImgs[i]){
+    currentSmallImg = i;
+  }
+}
+event.target.parentElement.classList.add("our-attorneys__img--active");
+fullSizeImg.src = imageStr.substring(0, imageStr.length-4) + "_full.png";
+clearInterval(interval2);
+interval2 = setInterval(changeSlide2, 5000);
+});
+});
+
+let interval2 = setInterval(changeSlide2, 5000);
+function changeSlide2(){
+  for(let i = 0; i < 4; i++){
+    smallImgs[i].classList.remove("our-attorneys__img--active");
+  }
+
+  currentSmallImg = (currentSmallImg + 1) % smallImgs.length;
+  smallImgs[currentSmallImg].classList.add("our-attorneys__img--active");
+
+  smallImgs[currentSmallImg].parentElement.classList.add('our-attorneys__img--active');
+  srcOfImg = smallImgs[currentSmallImg].firstChild.src;
+  fullSizeImg.src = (srcOfImg.substring(0, srcOfImg.length-4)) + "_full.png";
+}
