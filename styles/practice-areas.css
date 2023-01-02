@@ -214,3 +214,15 @@ dd {
     margin-top: 20px;
     margin-bottom: 5px;
 }
+
+.audio-sub-container{
+    margin: auto;
+    max-width: fit-content;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.audio-sub-container p{
+    font-size: 25px;
+    margin-bottom: 5px;
+}

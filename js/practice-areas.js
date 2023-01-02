@@ -9,9 +9,11 @@ window.addEventListener("load", function(){
     }
     else if(10 <= time && time < 16){
         elem.style.background = "#404040";
+        elem.style.color = "white";
     }
     else if(16 <= time && time < 20){
         elem.style.background = "#D2A298";
+        elem.style.color = "white";
     }
     else if(20 <= time && time < 24){
         elem.style.background = "#A8B9D4";
