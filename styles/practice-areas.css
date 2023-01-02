@@ -226,3 +226,27 @@ dd {
     font-size: 25px;
     margin-bottom: 5px;
 }
+
+.CSSList-title{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+div.CSSList .list-item{
+    margin-right: 10px;
+    border: 1px solid #FF983D;
+    padding: 10px;
+}
+
+div.CSSList .list-item:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+div.CSSList .list-item{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}

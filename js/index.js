@@ -36,25 +36,3 @@ function changeSlide(){
   slides[currentSlideIndex].classList.add('hero-banner-slider--active');
   dots[currentSlideIndex].classList.add('hero-slider-dots__active');
 }
-
-window.onload = function () {
-  const button = document.querySelector('#show-search-btn');
-  const input = document.querySelector('#search-btn');
-
-  const stringToSearch = document.documentElement.innerHTML;
-
-  button.addEventListener('click', () => {
-    const searchTerm = input.value;
-
-    const regex = new RegExp(searchTerm, 'g');
-
-    const match = regex.test(stringToSearch);
-
-    if(match){
-      alert("String found");
-    }
-    else{
-      alert("String not found");
-    }
-  });
-}
