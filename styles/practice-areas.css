@@ -250,3 +250,22 @@ div.CSSList .list-item{
     text-transform: uppercase;
     color: #333;
 }
+
+.more-practice-title{
+    column-span: all;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.more-practice{
+    text-align: center;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px solid #FF983D;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.more-practice p{
+    margin-bottom: 80px;
+}
