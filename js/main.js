@@ -11,10 +11,12 @@ window.onload = function () {
 
     const regex = new RegExp(searchTerm, 'g');
 
+    var result1 = regex.exec(stringToSearch);
+
     const match = regex.test(stringToSearch);
 
     if (match){
-      alert("Found");
+      alert("String (" + result1 + ") found");
     }
     else{
       alert("Not found");
