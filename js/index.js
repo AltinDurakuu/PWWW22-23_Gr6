@@ -111,3 +111,21 @@ function tMoveBackwards(){
   }
   tSlides[tCurrentSlideIndex].classList.add('tst-main--active');
 }
+
+var phoneInput = document.querySelector('input[name="tel-no"]');
+var form = document.querySelector(".consultation-form");
+
+form.addEventListener('submit', function validatePhoneNumber(e) {
+  e.preventDefault();
+  // Regular expression to match a phone number
+  var phoneRegex = /^[0-9]{3} [0-9]{2} [0-9]{3} [0-9]{3}/;
+
+  // Check the value of the input against the regular expression
+  if (phoneRegex.test(phoneInput.value)) {
+    // The value is a valid phone number
+    form.reset();
+  } else {
+    // The value is not a valid phone number
+    alert("Error! Phone number format is incorrect");
+  }
+});
