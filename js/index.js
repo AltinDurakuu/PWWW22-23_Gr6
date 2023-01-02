@@ -82,15 +82,15 @@ let tCurrentSlideIndex = 0;
 
 tSlides[tCurrentSlideIndex].classList.add('tst-main--active');
 
-const tInterval = setInterval(() => {
+let tInterval = setInterval(changeTSlide, 5000);
+
+function changeTSlide(){
   tSlides[tCurrentSlideIndex].classList.remove('tst-main--active');
-  
+
   tCurrentSlideIndex = (tCurrentSlideIndex + 1) % tSlides.length;
-
+  
   tSlides[tCurrentSlideIndex].classList.add('tst-main--active');
-
-},20000)
-
+}
 
 document.getElementById("tst-move-forward").addEventListener("click",tMoveForward);
 document.getElementById("tst-move-backwards").addEventListener("click",tMoveBackwards);
@@ -99,6 +99,8 @@ function tMoveForward(){
   tSlides[tCurrentSlideIndex].classList.remove('tst-main--active');
   tCurrentSlideIndex = (tCurrentSlideIndex + 1) % tSlides.length; 
   tSlides[tCurrentSlideIndex].classList.add('tst-main--active');
+  clearInterval(tInterval);
+  tInterval = setInterval(changeTSlide, 5000);
 }
 
 function tMoveBackwards(){
@@ -110,6 +112,8 @@ function tMoveBackwards(){
     tCurrentSlideIndex = (tCurrentSlideIndex - 1) % tSlides.length;
   }
   tSlides[tCurrentSlideIndex].classList.add('tst-main--active');
+  clearInterval(tInterval);
+  tInterval = setInterval(changeTSlide, 5000);
 }
 
 var phoneInput = document.querySelector('input[name="tel-no"]');
