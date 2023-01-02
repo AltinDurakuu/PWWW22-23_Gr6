@@ -3,7 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
-    background-color: #fafafa;
+    background-origin:border-box ;
+    background: radial-gradient(circle, #aaa, #ccc 50%, #eee 75%, #999 100%);
 }
 
 .mb-left{
@@ -21,6 +22,11 @@
     border-bottom: solid 2px #aaa;
 }
 
+.mb-content{
+    inline-size: auto; 
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
 .mbd-date{
     color: #666;
     padding: 5px;
@@ -55,13 +61,14 @@
     padding-left: 10px;
 }
 
-
 .mb-right{
     width: 44%;
     height: 600px;
-    background-image: url(../assets/images/our-attorneys1.png);
+    background-image:url(../assets/images/p-logo-white.png), url(../assets/images/our-attorneys1.png);
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:auto,cover;
+    background-position:center right,left;
+    background-attachment:fixed,scroll;
 }
 
 .blogs-contaioner{
@@ -88,8 +95,7 @@
 .small-blog{
     width: 30%;
     height: 300px;
-    background-image: url(../assets/images/our-attorneys1.png);
-    background-repeat: no-repeat;
+    background:url(../assets/images/our-attorneys1.png) no-repeat ;
     background-size:cover;
     margin-bottom: 30px;
     display: flex;
@@ -107,4 +113,5 @@
     padding: 20px;
     font-size: 28px;
     font-weight: 500;
+    text-shadow: #aaa 5px 5px 5px;
 }
