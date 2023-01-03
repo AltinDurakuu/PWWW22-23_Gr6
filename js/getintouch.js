@@ -65,3 +65,22 @@ function addParagraph(text){
 
     modalForm.appendChild(p);
 }
+
+//Calculating the total charges of hiring an attorney
+var button = document.getElementById("calculate");
+button.addEventListener("click", function getCharges(){
+    var hours_field = document.querySelector("#hours_field");
+    var total = document.querySelector("#total");
+
+    var hours = parseFloat(hours_field.value);
+    var fee = calculateCharges(hours);
+
+    total.innerHTML = "Total: " + fee.toFixed(2).toString();
+});
+
+function calculateCharges(hours){
+    if (hours < Number.MAX_VALUE && !Number.isNaN(hours)){
+        var charge = hours * 150;
+        return charge;
+    }
+}

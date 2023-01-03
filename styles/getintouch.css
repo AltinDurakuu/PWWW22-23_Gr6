@@ -188,3 +188,56 @@
     text-align: center;
     color: white;
 }
+
+.charges-sub-container{
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 500px;
+    border: 5px dotted #FF983D;
+}
+
+.charges-title{
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.charges-sub-container p{
+    font-size: 18px;
+}
+
+.charges-sub-container > p:nth-last-child(3){
+    margin-bottom: 5px;
+}
+
+.charges-sub-container label{
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+#hours_field{
+    width: 150px;
+    text-align: right;
+}
+
+#calculate{
+    background-color: #FF7800;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    padding: 0.5em 1px;
+    max-width: fit-content;
+}
+
+#calculate:hover{
+    box-shadow: -1px 1px 1px #666;
+}
+
+#total{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1em;
+}
