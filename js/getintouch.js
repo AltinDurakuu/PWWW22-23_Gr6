@@ -2,8 +2,6 @@ var form = document.getElementById("getintouch_form");
 const closeBtn = document.getElementById("close");
 const modalForm = document.querySelector(".errors");
 
-console.log("hello");
-
 form.addEventListener('submit', validateForm);
 closeBtn.addEventListener('click', removeModalForm);
 
@@ -70,18 +68,17 @@ function addParagraph(text){
 
 let total2 = localStorage.getItem('total');
 total.innerHTML = "Total: " + Number(total2).toFixed(2).toString();
-var button = document.getElementById("calculate");
-button.addEventListener("click", function getCharges(){
-    var hours_field = document.querySelector("#hours_field");
-    var total = document.querySelector("#total");
+var form = document.getElementById("calculateForm");
+form.addEventListener("submit", function getCharges(e){
+    e.preventDefault();
+    var hours_field = document.getElementById("hours_field");
+    var total = document.getElementById("total");
 
-    var hours =Math.abs(parseFloat(hours_field.value));//
+    var hours = Math.abs(parseFloat(hours_field.value));//
     var fee = calculateCharges(hours);
     localStorage.setItem('total', fee);
 
       let total2 = Number(localStorage.getItem('total'));
-      console.log(typeof total2);
-//    total.innerHTML = "Total: " + fee.toFixed(2).toString();
       total.innerHTML = "Total: " + total2.toFixed(2).toString();
 });
 
