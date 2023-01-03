@@ -739,6 +739,9 @@ svg,img{
     margin-bottom: 3px;
     position: relative;
 }
+.our-attorneys-imgs-container .our-attorneys__img--active{
+    border: 2px solid #FF7800;
+}
 .our-attorneys-imgs-container .our-attorneys__img--active::before{
     content: "";
     position: absolute;
