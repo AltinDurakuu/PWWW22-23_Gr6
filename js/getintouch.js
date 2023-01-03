@@ -67,19 +67,26 @@ function addParagraph(text){
 }
 
 //Calculating the total charges of hiring an attorney
+
+let total2 = localStorage.getItem('total');
+total.innerHTML = "Total: " + Number(total2).toFixed(2).toString();
 var button = document.getElementById("calculate");
 button.addEventListener("click", function getCharges(){
     var hours_field = document.querySelector("#hours_field");
     var total = document.querySelector("#total");
 
-    var hours = parseFloat(hours_field.value);
+    var hours =Math.abs(parseFloat(hours_field.value));//
     var fee = calculateCharges(hours);
+    localStorage.setItem('total', fee);
 
-    total.innerHTML = "Total: " + fee.toFixed(2).toString();
+      let total2 = Number(localStorage.getItem('total'));
+      console.log(typeof total2);
+//    total.innerHTML = "Total: " + fee.toFixed(2).toString();
+      total.innerHTML = "Total: " + total2.toFixed(2).toString();
 });
 
 function calculateCharges(hours){
-    if (hours < Number.MAX_VALUE && !Number.isNaN(hours)){
+    if (hours < Number.MAX_VALUE && !Number.isNaN(hours) &&Number.isFinite(hours)){
         var charge = hours * 150;
         return charge;
     }
