@@ -9,6 +9,8 @@
     margin-bottom: 100px;
     background-origin:border-box ;
     background: radial-gradient(circle, #aaa, #ccc 50%, #eee 75%, #999 100%);
+    border: 10px solid white;
+    border-image: url(../assets/images/border-img.png) 10% stretch;
 }
 
 @keyframes bigbg {
@@ -90,7 +92,7 @@
     height: 600px;
     background-repeat:no-repeat;
     background-size:auto,cover;
-    background-position:center right 65px,left;
+    background-position:center right 80px,left;
     background-attachment:fixed,scroll;
 }
 
