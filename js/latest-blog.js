@@ -1,8 +1,10 @@
+window.addEventListener("load",function(){
+  const content = document.querySelector('.mb-content');
+  content.innerHTML = content.innerHTML.replace(/i /g, 'I ');
+  })
+
 const mBlogContairer = document.querySelector('.main-blog-container');
 const mBlogs = Array.from(mBlogContairer.querySelectorAll('.main-blog'));
-window.onload=showBlog(0);
-
-
 
 function showBlog(n) {
   try {
