@@ -13,6 +13,11 @@
     z-index: 0;
     padding-bottom: 10px;
 }
+
+.getintouch td:nth-child(2n){
+    background-color: #020202;
+}
+
 .getintouch .getintouch_content h2{
     font-size: 72px;
     text-align: center;
