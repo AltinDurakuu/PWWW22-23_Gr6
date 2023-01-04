@@ -1100,6 +1100,7 @@ svg,img{
     color: white;
     padding: 12px 25px;
     border: none;
+    cursor:pointer;
 }
 
 /*footer styles*/

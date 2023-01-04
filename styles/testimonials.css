@@ -126,6 +126,7 @@
     padding: 12px 25px;
     border: none;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .dt-title{
