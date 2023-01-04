@@ -634,6 +634,11 @@ svg,img{
     text-align: center;
 }
 
+.tst-person img{
+    width: 85px;
+    height: 85px;
+}
+
 .tst-p-dscr{
     margin-top: 20px;
     color: #404040;

@@ -39,6 +39,8 @@
 }
 
 .r-photo img{
+    width: 105px;
+    height: 105px;
     position:absolute;
     top: -45px;   
     border: white 10px solid;

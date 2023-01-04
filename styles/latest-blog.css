@@ -101,19 +101,19 @@
 }
 
 #mb1{
-    background-image:url(../assets/images/p-logo-white.png), url(../assets/images/our-attorneys1_full.png);
+    background-image:url(../assets/images/p-logo-white.png), url(../assets/images/our-attorneys2_full.png);
 }
 
 #mb2{
-    background-image:url(../assets/images/p-logo-white.png), url(../assets/images/our-attorneys1_full.png);
+    background-image:url(../assets/images/p-logo-white.png), url(../assets/images/our-attorneys3_full.png);
 }
 
 #mb3{
-    background-image:url(../assets/images/p-logo-white.png), url(../assets/images/our-attorneys1_full.png);
+    background-image:url(../assets/images/p-logo-white.png), url(../assets/images/blog1.webp);
 }
 
 #mb4{
-    background-image:url(../assets/images/p-logo-white.png), url(../assets/images/our-attorneys1_full.png);
+    background-image:url(../assets/images/p-logo-white.png), url(../assets/images/blog2.jpg);
 }
 
 .blogs-contaioner{
@@ -158,27 +158,27 @@
 }
 
 #sb1{
-    background:url(../assets/images/our-attorneys1_full.png) no-repeat;
+    background:url(../assets/images/our-attorneys2_full.png) no-repeat;
     background-size:cover;
 }
 
 #sb2{
-    background:url(../assets/images/our-attorneys1_full.png) no-repeat;
+    background:url(../assets/images/our-attorneys3_full.png) no-repeat;
     background-size:cover;
 }
 
 #sb3{
-    background:url(../assets/images/our-attorneys1_full.png) no-repeat;
+    background:url(../assets/images/blog1.webp) no-repeat;
     background-size:cover;
 }
 
 #sb4{
-    background:url(../assets/images/our-attorneys1_full.png) no-repeat;
+    background:url(../assets/images/blog2.jpg) no-repeat;
     background-size:cover;
 }
 
 #sb5{
-    background:url(../assets/images/our-attorneys1_full.png) no-repeat;
+    background:url(../assets/images/Wexler_McGill.jpg) no-repeat;
     background-size:cover;
 }
 
