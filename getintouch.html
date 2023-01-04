@@ -92,7 +92,7 @@
                         </div>
                         <div class="getintouch_content_register">
                             <h3>Register to get discounts</h3>
-                            <form action="" id="getintouch_form">
+                            <form action="https://rogova.info/test/feedback.php" id="getintouch_form">
                                 <table cellspacing="30" border="1">
                                     <thead>
                                         <tr>
@@ -110,26 +110,26 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <label>Name:<input type="text" required placeholder="Name"></label>
+                                                <label>Name:<input type="text" name="getintouch_name" required placeholder="Name"></label>
                                             </td>
                                             <td>
-                                                <label>Last name:<input type="text" required placeholder="Last name"></label>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label>Email:<input id="getintouch_email" type="email" required placeholder="Email"></label>
-                                            </td>
-                                            <td>
-                                                <label>Confirm email:<input type="email" id="getintouch_email2" required placeholder="Connfirm email"></label>
+                                                <label>Last name:<input type="text" name="getintouch_lastname" required placeholder="Last name"></label>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label>Enter your city:<input type="text" list="cities" placeholder="City"></label>
+                                                <label>Email:<input id="getintouch_email" name="getintouch_email" type="email" required placeholder="Email"></label>
                                             </td>
                                             <td>
-                                                <label>Telephone:<input type="tel" placeholder="383 44 000 000" pattern="[0-9]{3} [0-9]{2} [0-9]{3} [0-9]{3}"></label>
+                                                <label>Confirm email:<input type="email"name="getintouch_email2" id="getintouch_email2" required placeholder="Connfirm email"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Enter your city:<input type="text" name="getintouch_city" list="cities" placeholder="City"></label>
+                                            </td>
+                                            <td>
+                                                <label>Telephone:<input type="tel" name="getintouch_telephone" placeholder="383 44 000 000" pattern="[0-9]{3} [0-9]{2} [0-9]{3} [0-9]{3}"></label>
                                             </td>
                                             <datalist id="cities">
                                                 <option value="Prishtine"></option>
@@ -140,28 +140,28 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label>Password:<input id="getintouch_password1" type="password" required placeholder="Password"></label>
+                                                <label>Password:<input id="getintouch_password1" name="getintouch_password1" type="password" required placeholder="Password"></label>
                                             </td>
                                             <td>
-                                                <label>Confirm password:<input id="getintouch_password2" type="password" required placeholder="Confirm Password"></label>
+                                                <label>Confirm password:<input id="getintouch_password2" name="getintouch_password2" type="password" required placeholder="Confirm Password"></label>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="table-cell-checkbox">
-                                                <label>Have u ever been<br>client of us?<input type="checkbox"></label><br>
+                                                <label>Have u ever been<br>client of us?<input name="getintouch_clientOfUs" type="checkbox"></label><br>
                                             </td>
                                             <td rowspan="3">
-                                                <label>Any comments:<br><textarea name="" id="" style="width: 100%;" rows="10" placeholder="Add a comment"></textarea></label>
+                                                <label>Any comments:<br><textarea name="getintouch_comments" id="" style="width: 100%;" rows="10" placeholder="Add a comment"></textarea></label>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="table-cell-checkbox">
-                                                <label></label>Are u over 18?<input type="checkbox"></label><br>
+                                                <label></label>Are u over 18?<input name="getintouch_over18" type="checkbox"></label><br>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="table-cell-checkbox">
-                                                <label>Are you being represented<br>by another comany currently?<input type="checkbox"></label>
+                                                <label>Are you being represented<br>by another comany currently?<input name="getintouch_otherCompany" type="checkbox"></label>
                                             </td>
                                         </tr>
                                     </tbody>
