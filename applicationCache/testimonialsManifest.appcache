@@ -1,14 +1,16 @@
 CACHE MANIFEST
+# version 1.0
 
-/style.css
-/styles/testimonials.css
-/assets/audios/*
-/assets/fonts/*
-/assets/images/*
-/assets/videos/*
+CACHE:
+./../style.css
+./../styles/testimonials.css
+./../assets/audios/*
+./../assets/fonts/*
+./../assets/images/*
+./../assets/videos/*
 
 NETWORK:
 *
 
 FALLBACK:
-/html/ /testimonials.html
+/html/ ./../testimonials.html

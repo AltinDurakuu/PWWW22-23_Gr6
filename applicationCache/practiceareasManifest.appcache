@@ -1,15 +1,17 @@
 CACHE MANIFEST
+# version 1.0
 
-/style.css
-/styles/practice-areas.css
-/js/practice-areas.js
-/assets/audios/*
-/assets/fonts/*
-/assets/images/*
-/assets/videos/*
+CACHE:
+./../style.css
+./../styles/practice-areas.css
+./../js/practice-areas.js
+./../assets/audios/*
+./../assets/fonts/*
+./../assets/images/*
+./../assets/videos/*
 
 NETWORK:
 *
 
 FALLBACK:
-/html/ /practice-areas.html
+/html/ ./../practice-areas.html

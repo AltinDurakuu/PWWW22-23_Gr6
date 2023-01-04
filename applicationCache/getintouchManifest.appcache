@@ -1,14 +1,16 @@
 CACHE MANIFEST
+# version 1.0
 
-/style.css
-/styles/getintouch.css
-/assets/audios/*
-/assets/fonts/*
-/assets/images/*
-/assets/videos/*
+CACHE:
+./../style.css
+./../styles/getintouch.css
+./../assets/audios/*
+./../assets/fonts/*
+./../assets/images/*
+./../assets/videos/*
 
 NETWORK:
 *
 
 FALLBACK:
-/html/ /getintouch.html
+/html/ ./../getintouch.html

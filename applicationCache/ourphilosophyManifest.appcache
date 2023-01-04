@@ -1,14 +1,16 @@
 CACHE MANIFEST
+# version 1.0
 
-/style.css
-/styles/our-philosophy.css
-/assets/audios/*
-/assets/fonts/*
-/assets/images/*
-/assets/videos/*
+CACHE:
+./../style.css
+./../styles/our-philosophy.css
+./../assets/audios/*
+./../assets/fonts/*
+./../assets/images/*
+./../assets/videos/*
 
 NETWORK:
 *
 
 FALLBACK:
-/html/ /our-philosophy.html
+/html/ ./../our-philosophy.html

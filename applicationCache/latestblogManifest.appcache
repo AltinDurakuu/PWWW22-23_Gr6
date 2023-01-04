@@ -1,14 +1,16 @@
 CACHE MANIFEST
+# version 1.0
 
-/style.css
-/styles/latest-blog.css
-/assets/audios/*
-/assets/fonts/*
-/assets/images/*
-/assets/videos/*
+CACHE:
+./../style.css
+./../styles/latest-blog.css
+./../assets/audios/*
+./../assets/fonts/*
+./../assets/images/*
+./../assets/videos/*
 
 NETWORK:
 *
 
 FALLBACK:
-/html/ /latest-blog.html
+/html/ ./../latest-blog.html
