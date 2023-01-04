@@ -21,9 +21,6 @@ window.onload = function () {
     if (match){
       alert("String (" + result1 + ") found \n" + "This string occurred " + occurrenceNumber + " times");
     }
-    else{
-      alert("Not found");
-    }
   })
 }
   
