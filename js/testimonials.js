@@ -32,12 +32,12 @@ var form = document.querySelector(".review-form");
 var nameInput = document.querySelector('input[name="Full-name"]');
 
 form.addEventListener('submit', function validateName(e) {
-    e.preventDefault();
 
     var nums = new RegExp(/\d/);
     var name=nameInput.value;
 
     if (nums.test(name)) {
+        e.preventDefault();
         alert("Error! The name can't contain numbers");
     }
   });
