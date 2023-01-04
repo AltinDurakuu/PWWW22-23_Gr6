@@ -776,8 +776,13 @@ svg,img{
     font-size: 15px;
 }
 
+.awards-upper p{
+    color: #333;
+}
+
 .awards-title{
     font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .awards-logos{
