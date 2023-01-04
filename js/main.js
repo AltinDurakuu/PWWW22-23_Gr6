@@ -15,8 +15,11 @@ window.onload = function () {
 
     const match = regex.test(stringToSearch);
 
+    const matches = stringToSearch.match(regex);
+    const occurrenceNumber = matches.length;
+
     if (match){
-      alert("String (" + result1 + ") found");
+      alert("String (" + result1 + ") found \n" + "This string occurred " + occurrenceNumber + " times");
     }
     else{
       alert("Not found");
