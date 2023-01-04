@@ -96,6 +96,19 @@ svg,img{
     justify-content: space-between;
     align-items: flex-start;
 }
+
+.logo{
+    position: relative;
+}
+
+.logo-text{
+    position: absolute;
+    top: 13.2%;
+    left: 12%;
+    color: white;
+    z-index: 1;
+}
+
 .web-header-top .web-header-top-contact-us{
     display: flex;
     align-items: center;
