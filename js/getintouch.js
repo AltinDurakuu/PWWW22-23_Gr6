@@ -78,8 +78,8 @@ form.addEventListener("submit", function getCharges(e){
     var fee = calculateCharges(hours);
     localStorage.setItem('total', fee);
 
-      let total2 = Number(localStorage.getItem('total'));
-      total.innerHTML = "Total: " + total2.toFixed(2).toString();
+    let total2 = Number(localStorage.getItem('total'));
+    total.innerHTML = "Total: " + total2.toFixed(2).toString();
 });
 
 function calculateCharges(hours){
