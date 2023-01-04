@@ -5,7 +5,7 @@
   <style>
     /* Add some style to make the game look nice */
     body {
-      background-color: black;
+      background-color: #FF7800;
       color: white;
       font-family: sans-serif;
       text-align: center;
@@ -13,10 +13,11 @@
     #game {
       display: inline-block;
       margin-top: 50px;
-      width: 500px;
-      height: 500px;
+      width: 1180px;
+      height: 510px;
       background-color: white;
       border: 10px solid black;
+      border-radius: 60px;
     }
     #game #player {
       width: 50px;
@@ -29,16 +30,32 @@
     #goal {
         width: 50px;
         height: 50px;
-        background-color: white;
+        background-color: aliceblue;
         border: 2px solid black;
         position: absolute;
         top: 450px;
-        left: 600px;
+        left: 950px;
+    }
+    #score{
+      position: absolute;
+      left: 50px;
+      top: -10px;
+      font-size: 24px;
+      line-height: 1.1em;
+    }
+    #highScore{
+      position: absolute;
+      left: 190px;
+      top: -10px;
+      font-size: 24px;
+      line-height: 1.1em;
     }
   </style>
 </head>
 <body>
   <!-- The game will go here -->
+  <p id="score">Score: 0</p>
+  <p id="highScore">High Score: <span id="highestScore"></span></p>
   <div id="game">
     <div id="player"></div>
     <div id="goal"></div>
@@ -48,46 +65,79 @@
   <script>
     // Get the game and player elements
     var game = document.getElementById("game");
+    var scoreOutput = document.getElementById("score");
+    var highestScore = document.getElementById("highestScore");
     var player = document.getElementById("player");
     var goal = document.getElementById("goal");
+    var score = 0;
     
     // Set the initial position of the player
-    player.style.top = "0px";
-    player.style.left = "0px";
+    player.style.top = "100px";
+    player.style.left = "50px";
+    let highestScoreSesssion = sessionStorage.getItem('Score');
+    highestScore.innerHTML = highestScoreSesssion;
     
     // Handle the arrow key presses
     document.addEventListener("keydown", function(event) {
   // Update the player's position
-  switch (event.key) {
-    case "ArrowUp":
-      // Move the player up
-      var top = parseInt(player.style.top);
-      player.style.top = (top - 50) + "px";
-      break;
-    case "ArrowDown":
-      // Move the player down
-      var top = parseInt(player.style.top);
-      player.style.top = (top + 50) + "px";
-      break;
-    case "ArrowLeft":
-      // Move the player left
-      var left = parseInt(player.style.left);
-      player.style.left = (left - 50) + "px";
-      break;
-    case "ArrowRight":
-      // Move the player right
-      var left = parseInt(player.style.left);
-      player.style.left = (left + 50) + "px";
-      break;
-  }
-  
-
   var playerTop = parseInt(player.style.top.substring(0, player.style.top.length -2));
   var playerLeft = parseInt(player.style.left.substring(0, player.style.left.length -2));
 
-  console.log(goal.style.top);
-  if (playerTop == 450 && playerLeft == 600) {
+  switch (event.key) {
+    
+    case "ArrowUp":
+      // Move the player up
+        var top = parseInt(player.style.top);
+        if(top > 100){
+          player.style.top = (top - 50) + "px";
+          score++;
+          scoreUpdate();
+        }
+      break;
+    case "ArrowDown":
+      // Move the player down
+        var top = parseInt(player.style.top);
+      if(top < 500){
+        player.style.top = (top + 50) + "px";
+        score++;
+        scoreUpdate();
+      }
+      break;
+    case "ArrowLeft":
+      // Move the player left
+        var left = parseInt(player.style.left);
+      if(left > 50){
+        player.style.left = (left - 50) + "px";
+        score++;
+        scoreUpdate();
+      } 
+      break;
+    case "ArrowRight":
+      // Move the player right
+        var left = parseInt(player.style.left);
+      if(left < 1150){
+        player.style.left = (left + 50) + "px";
+        score++;
+        scoreUpdate();
+      }
+      break;
+  }
+  function scoreUpdate(){
+    scoreOutput.innerHTML = "Score: " + score;
+  }
+
+  if (playerTop == 450 && playerLeft == 950) {
     alert("You won!");
+    let highestScoreSesssion = sessionStorage.getItem('Score');
+    if ("Score" in sessionStorage) {
+      if(score < highestScoreSesssion && score != 0){
+      sessionStorage.setItem('Score', score);
+      highestScore.innerHTML = score;
+    }}else {
+      sessionStorage.setItem('Score', score);
+      highestScore.innerHTML = score;
+    }
+    window.location.reload();
   }
 });
   </script>
