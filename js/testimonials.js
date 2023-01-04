@@ -39,7 +39,5 @@ form.addEventListener('submit', function validateName(e) {
 
     if (nums.test(name)) {
         alert("Error! The name can't contain numbers");
-    } else {
-        form.reset();      
     }
   });
