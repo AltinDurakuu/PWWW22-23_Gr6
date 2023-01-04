@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <title>Simple HTML Game</title>
+  <style>
+    /* Add some style to make the game look nice */
+    body {
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    #game {
+      display: inline-block;
+      margin-top: 50px;
+      width: 500px;
+      height: 500px;
+      background-color: white;
+      border: 10px solid black;
+    }
+    #game #player {
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      border: 2px solid white;
+      position: absolute;
+    }
+
+    #goal {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: 2px solid black;
+        position: absolute;
+        top: 450px;
+        left: 600px;
+    }
+  </style>
+</head>
+<body>
+  <!-- The game will go here -->
+  <div id="game">
+    <div id="player"></div>
+    <div id="goal"></div>
+  </div>
+  
+  <!-- Add some JavaScript to make the game work -->
+  <script>
+    // Get the game and player elements
+    var game = document.getElementById("game");
+    var player = document.getElementById("player");
+    var goal = document.getElementById("goal");
+    
+    // Set the initial position of the player
+    player.style.top = "0px";
+    player.style.left = "0px";
+    
+    // Handle the arrow key presses
+    document.addEventListener("keydown", function(event) {
+  // Update the player's position
+  switch (event.key) {
+    case "ArrowUp":
+      // Move the player up
+      var top = parseInt(player.style.top);
+      player.style.top = (top - 50) + "px";
+      break;
+    case "ArrowDown":
+      // Move the player down
+      var top = parseInt(player.style.top);
+      player.style.top = (top + 50) + "px";
+      break;
+    case "ArrowLeft":
+      // Move the player left
+      var left = parseInt(player.style.left);
+      player.style.left = (left - 50) + "px";
+      break;
+    case "ArrowRight":
+      // Move the player right
+      var left = parseInt(player.style.left);
+      player.style.left = (left + 50) + "px";
+      break;
+  }
+  
+
+  var playerTop = parseInt(player.style.top.substring(0, player.style.top.length -2));
+  var playerLeft = parseInt(player.style.left.substring(0, player.style.left.length -2));
+
+  console.log(goal.style.top);
+  if (playerTop == 450 && playerLeft == 600) {
+    alert("You won!");
+  }
+});
+  </script>
+</body>
+</html>
